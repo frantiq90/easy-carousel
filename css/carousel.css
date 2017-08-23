@@ -1,0 +1,71 @@
+/*CAROUSEL*/
+.home-page-carousel-slide > img {
+    height: 35rem;
+    width: 100%;
+    margin:0 auto;
+    object-fit: cover;
+}
+.home-page-carousel-slide {
+    display: none;
+    position: relative;
+}
+
+.home-page-carousel-slide > .home-page-carousel-caption {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+}
+
+.home-page-carousel-caption > h3 {
+    font-weight: bold;
+}
+
+
+.home-page-carousel-active {
+    display: block;
+}
+
+#home-page-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+#home-page-carousel-prev {
+    position: absolute;
+    padding: 0;
+    background: none;
+    top: 50%;
+    left:3%;
+    transform: translate(-50%, -50%);
+}
+
+#home-page-carousel-next {
+    position: absolute;
+    padding: 0;
+    background: none;
+    top: 50%;
+    left: 97%;
+    transform: translate(-50%, -50%);
+}
+
+#home-page-carousel-prev > .fa-arrow-left, #home-page-carousel-next > .fa-arrow-right {
+    font-size: 3rem;
+    transition: all 0.3s;
+}
+
+#home-page-carousel-prev > .fa-arrow-left:hover, #home-page-carousel-next > .fa-arrow-right:hover {
+    font-size: 4rem;
+}
+
+#home-page-carousel-next, #home-page-carousel-prev {
+    opacity: 0.3;
+}
+
+#home-page-carousel-next:hover, #home-page-carousel-prev:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
